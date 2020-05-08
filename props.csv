@@ -1,0 +1,44 @@
+name,cost,category
+table,50,furniture
+chair,40,furniture
+wallet,8,prop
+keys,7,prop
+folder,8,prop
+dish,12,houseware
+knife,7,houseware
+fork,7,houseware
+spoon,7,houseware
+desk,80,furniture
+phone,50,prop
+book,10,prop
+mug,10,prop
+glass,17,prop
+computer,330,prop
+laptop,400,prop
+charger,9,prop
+towell,13,prop
+brush,4,prop
+toothbrush,9,prop
+plant,18,prop
+bike,200,vehicle
+hat,9,clothing
+shoes,30,clothing
+lighter,9,prop
+rug,24,houseware
+microphone,23,prop
+boombox,20,prop
+cd,5,prop
+index cards,3,prop
+seran wrap,3,prop
+bins,30,prop
+art,8,housewares
+beers,10,prop
+mini-fridge,43,houseware
+paper,4,prop
+spanish textbook,10,prop
+big table,43,houseware
+notepad,9,prop
+textbook,27,prop
+crowbar,7,prop
+envelope,4,prop
+magazines,5,prop
