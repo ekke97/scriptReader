@@ -23,15 +23,17 @@ LIMITS
 Only reads .txt files to our knowledge
 
 ADDITIONAL FEATURES TO WORK ON (IF TIME PERMITS)
-- Support more file types
+- Support more file types.
 
-- Hopefully we can find an effective and automated way of fetching words and costs associated with them (web scraper, ML, etc…)
+- Hopefully we can find an effective and automated way of fetching words and costs associated with them (web scraper, ML, etc…).
+- Can then expand to allowing the user to choose a preferred set of sources for the database 
+(certain known prop or clothing websites, e-commerce sites like Amazon or Ebay, Google Shopping, etc.)
 
 - We will use a database type that will work best for this project and might shift to a better version if we need it and time permits
 
 - Expand this further to using semantic role labeling to identify new items to add to the database when reading new scripts,
 and then if time permits look into ways (ML, AI) to automatically build the database while reading more scripts, 
-making the program smarter and the database more extensive and optimized.
+making the program incrementally smarter and the database more extensive and optimized.
 
 - More detailed information about the script
 
@@ -42,6 +44,8 @@ There could also be a feature where we offer alternatives to certain props or ev
 Maybe for each product, we could utilize an npm package that offers similar objects/events and then track the average prices of those, 
 then shoot back alternative(s) that are cheaper.
 We could develop a feature where the program returns the lines where the most “expensive” words appear.
+
+
 
 
 
