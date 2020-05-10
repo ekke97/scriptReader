@@ -25,6 +25,8 @@ Only reads .txt files to our knowledge
 ADDITIONAL FEATURES TO WORK ON (IF TIME PERMITS)
 - Support more file types.
 
+- Make cost variables double to support decimalformat and $ as prefix.
+
 - Hopefully we can find an effective and automated way of fetching words and costs associated with them (web scraper, ML, etc…).
 - Can then expand to allowing the user to choose a preferred set of sources for the database 
 (certain known prop or clothing websites, e-commerce sites like Amazon or Ebay, Google Shopping, etc.)
