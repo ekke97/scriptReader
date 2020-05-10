@@ -16,16 +16,13 @@ import java.lang.Iterable;
 import java.util.Formatter;
 
 public class scriptReader {
-    
     FileReader file;
     BufferedReader buffer;
-
     // For handling each word in the script
     public static String[] keywordHelper(String text) {
     	String[] ready = text.replaceAll("[^a-zA-Z ]", "").toLowerCase().split(" ");
     	return ready;
     }
-
     // ------------- MAIN -----------------------------------------------------------
 	public static void main(String[] args) {
 		if ((args.length < 1) || (args.length > 1)) {
@@ -51,7 +48,6 @@ public class scriptReader {
 				Item i = new Item (name, cost, category);
 				db.put(name, i);
 			}
-
 			// READ FILE - Line by line, and if word matches in HashMap, then increment count on that item
 			BufferedReader buf = new BufferedReader(new FileReader(args[0]));
 			String in = " ";
@@ -65,13 +61,12 @@ public class scriptReader {
 					}
 				}
 			}
-
 			// Calculate the total cost of the script
 			int total = 0;
 			for (Item i : db.values()) {
 				if (i.count > 0) {
-					total = total + (i.cost * i.count);
-					i.totCost = i.totCost + (i.cost * i.count);
+					total += (i.cost * i.count);
+					i.totCost += (i.cost * i.count);
 					// print cost per item
 					System.out.println(i.toString());
 				}
@@ -79,13 +74,12 @@ public class scriptReader {
 			// create category db to calculate cost per category
 			for (Item i : db.values()) {
 				if (i.count > 0) {
-					if(!catdb.containsKey(i.category)) {
+					if (!catdb.containsKey(i.category)) {
 						int costcat = (i.cost * i.count);
 						catdb.put(i.category, costcat);
-					}
-					else if(catdb.containsKey(i.category)) {
+					} else if (catdb.containsKey(i.category)) {
 						int costcat = (catdb.get(i.category));
-						costcat = costcat + (i.cost + i.count);
+						costcat += (i.cost + i.count);
 						catdb.replace(i.category, costcat);
 					}					
 				}
@@ -95,7 +89,6 @@ public class scriptReader {
 			for (String key : catdb.keySet()) {
 				System.out.println("Category: " + key + ", Total category cost: $" + catdb.get(key));
 			}
-
 			System.out.println();
 			// Print total script cost
 			System.out.println("Total cost of script: $" + total);
@@ -106,12 +99,5 @@ public class scriptReader {
         catch (IOException e) {
             System.out.println("Error reading from .csv file.");
         }
-        
-        
-        
-        
     }
-
-		
 }
-
