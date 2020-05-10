@@ -2,7 +2,7 @@ Literature in the Age of Artificial Intelligence
 Columbia University, Spring 2020
 Final Project
 Professor Dennis Tenen
-Team: Erik Molin, Alexander Hiller, Elizabeth Merrigan, Drew Marten
+Team: Erik Molin, Alexander Hiller, Elizabeth Merrigan, Andrew Marten Medina
 
 Usage: java scriptReader <script-to-analyze>
 Test with the "com.txt" file - this is the script of the pilot episode of the show "Community".
